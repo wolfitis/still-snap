@@ -41,8 +41,8 @@
         }, false);
 
         clearsnap();
+    }
 
-    }) ();
     function clearsnap() {
         var context = canvas.getContext('2d');
         context.fillStyle = "#AAA";
@@ -64,3 +64,5 @@
             clearsnap();
         }
     }
+    window.addEventListener('load', startup, false);
+})();
